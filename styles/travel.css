@@ -1,0 +1,41 @@
+/* common shared styles */
+    body{
+        font-style: normal;
+        font-family: Mulish;
+       
+    }
+/* nav related styles */
+ nav{
+    display: flex;
+    color: #131318;
+    font-family: Mulish;
+    font-size: 36px;
+    justify-content: space-between;
+       
+ }
+ .nav-title{
+    font-weight: 800;
+
+ }
+ 
+ .text-primary{
+    color:red;
+ }
+ nav>ul{
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    
+    
+ }
+ nav li{
+    list-style: none;
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 400;
+    
+ }
+ nav a{
+    text-decoration: none;
+    color: #424247;
+ }
