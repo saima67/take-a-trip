@@ -1,267 +1,342 @@
 /* common shared styles */
-*{
-    margin:0;
-    padding:0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-    body{
-        font-style: normal;
-        font-family: 'Mulish';
-       
-    }
+
+body {
+  font-style: normal;
+  font-family: "Mulish", sans-serif;
+}
+
+header,
+main {
+  padding: 0px 100px;
+}
+
+section {
+  margin-top: 70px;
+}
+.section-title {
+  color: #131318;
+  font-size: 40px;
+  font-weight: 800;
+  padding-bottom: 30px;
+}
+.section-description {
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
 /* nav related styles */
- nav{
-    display: flex;
-    color: #131318;
-    font-family: 'Mulish';
-    font-size: 36px;
-    justify-content: space-between;
-    margin:20px;
-    
-       
- }
- .nav-title{
-    font-weight: 800;
-    margin-left:85px ;
-
- }
- 
- .text-primary{
-    color:orangered;
-
- }
- 
- nav>ul{
-    display: flex;
-    font-size: 18px;
-    align-items: center;
-    
-    
- }
- nav li{
-    list-style: none;
-    margin-right: 80px;
-    font-size: 18px;
-    font-weight: 400;
-    
- }
- nav a{
-    text-decoration: none;
-    color: #424247;
- }
-  .banner{
-    width: 1170px;
-    height: 500px;
-    flex-shrink: 0;
-    border-radius: 16px;
-    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%),url(../Images/Group\ 13\ \(1\)\ \(1\).png);
-    align-items: center;
-    border:10px;
-    margin-left: 100px;
-    text-align: center;
-    
-
- } 
- .banner-title {
-    color: #FFF;
-    font-family: 'Mulish';
-    font-size: 64px;
-    font-weight: 800;
-    padding-top: 100px;
- }
-
- .banner p{
-    color: #FFF;
-    text-align: center;
-    font-family: 'Mulish';
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px; 
-    padding: 60px;
- }
- .banner-input{
-    justify-content: center;
-    padding-top: 30px;
-    display: inline-flex;
-    padding: 16px;
-    align-items:flex-start;
-    gap: 24px;
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.30);
- }
- .banner-input input{
-    width: 174px;
-    height: 52px;
-    flex-shrink: 0;
-    border-radius: 8px;
-    border-style: none;
- }
- .banner-input ::placeholder{
-    color: rgba(19, 19, 24, 0.50);
-    text-align: center;
-    font-family: 'Mulish';
-    font-size: 16px;
-    font-weight: 400;
-    width: 174px;
-    height: 52px;
-    flex-shrink: 0;
-        
- }
- .banner-input select{
-    color: rgba(19, 19, 24, 0.50);
-    width: 174px;
-    height: 52px;
-    border-radius: 7px;
-    background: #FFF;
-    text-align: center;
-    font-family:'Mulish';
-    font-size: 16px;
-    border-style: none;
- }
- .banner-input button{
- color: #FFF;
- text-align: center;
- font-family: 'Mulish';
- font-size: 16px;
- font-weight: 700;
- width: 174px;
- height: 52px;
- border-radius: 8px;
- background: #FF5400;
- border-style: none;
- cursor: pointer;
- }
- .popular-tour-columns{
-   margin:60px;
-   justify-content: center;
-   align-items: center;
-   display: flex;
-
- }
- .popular-tour-description h2{
-   color: #131318;
-   text-align: center;
-   font-family: 'Mulish';
-   font-size: 40px;
-   font-weight: 800;
-   padding-bottom: 30px;
- }
- .popular-tour-description p{
-   color: rgba(19, 19, 24, 0.70);
-   font-family: 'Mulish';
-   font-size: 16px;
-   font-weight: 400;
-   line-height: 26px; 
-
- }
- .popular-tour-description ul{
-   color: rgba(19, 19, 24, 0.70);
-   font-family: 'Mulish';
-   font-size: 16px;
-   font-weight: 400;
-   line-height: 26px;
-   padding:10px 50px 50px 50px;
-
- }
- .popular-tour-image{
-   border-radius: 16px;
-background: url('../Images/Rectangle\ 4.png'), lightgray 50% / cover no-repeat;
- }
- .popular-tour-description button{
-   color: #FFF;
-   text-align: center;
-   font-family: 'Mulish';
-   font-size: 16px;
-   font-weight: 700;
-   width: 174px;
-   height: 52px;
-   border-radius: 8px;
-   background: #FF5400;
-   border-style: none;
-   margin-bottom: 30px;
-   cursor: pointer;
- }
- .newsletter{
-   width: 1440px;
-
-   
- }
- 
- .newsletter-section{
-   display: flex;
-   margin:60px;
-   justify-content: center;
-   align-items: center;
-   
-   
- }
-
-.newsletter-section h3{
-   color: #131318;
-   font-family: 'Mulish';
-   font-size: 24px;
-   font-weight: 800;
-   line-height: normal;
- }
- .newsletter p{
-   color: #5A5A5D;
-   font-family: 'Mulish';
-   font-size: 16px;
-   font-weight: 400;
-   line-height: 26px; 
-   width: 350px;
-   
- }
-.newsletter-image{
-   width: 672px;
-height: 422px;
-flex-shrink: 0;
-border-radius: 16px;
-background: url('../Images/Rectangle\ 8.png'), lightgray 50% / cover no-repeat;
+nav {
+  display: flex;
+  color: #131318;
+  font-family: "Mulish";
+  font-size: 36px;
+  justify-content: space-between;
+  margin: 40px 0px;
 }
- .newsletter-description input[type="text"], .newsletter-description input[type="email"]{
-   width: 393px;
-   height: 52px;
-   flex-shrink: 0;
-   border-radius: 8px;
-   background: rgba(19, 19, 24, 0.05);
-   border-style: none;
-   margin: 10px;
-    }
-.btn-primary{
-   width: 393px;
-   height: 52px;
-   flex-shrink: 0;
-   border-radius: 8px;
-   background: #FF5400;
-   color: white;
-   color: #FFF;
-   text-align: center;
-   font-family: 'Mulish';
-   font-size: 20px;
-   font-weight: 800;
-   line-height: normal;
-   border-style: none;
-   cursor: pointer;
-   margin: 10px;
-}
-footer{
-   width: 1440px;
-   height: 502px;
-   background: rgba(19, 19, 24, 0.05);
 
+.nav-title {
+  display: flex;
+  align-items: center;
+  font-weight: 800;
 }
-footer h3{
-   text-align:  center;
-}
-footer p{
-   text-align: center;
-}
-.social-links{
- 
-   display: flex;
-   justify-content: space-around;
-   width: 174.322px;
-   height: 24px;
-   
 
+.nav-title img {
+  margin-right: 15px;
+}
+
+.text-primary {
+  color: orangered;
+}
+
+nav > ul {
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+}
+
+nav li {
+  list-style: none;
+  margin-left: 50px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+nav a {
+  text-decoration: none;
+  color: #424247;
+}
+
+/* Banner related styles */
+.banner {
+  width: 100%;
+  height: 600px;
+  padding: 90px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url(../Images/Group_13.png);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+.banner-title {
+  font-size: 64px;
+  font-weight: 800;
+  margin-top: 20px;
+}
+
+.banner p {
+  width: 80%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  padding: 60px;
+}
+.banner-input {
+  justify-content: center;
+  padding-top: 30px;
+  display: inline-flex;
+  padding: 16px;
+  align-items: flex-start;
+  gap: 24px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+}
+.banner-input input {
+  width: 174px;
+  height: 52px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border-style: none;
+}
+.banner-input ::placeholder {
+  color: rgba(19, 19, 24, 0.5);
+  text-align: center;
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  width: 174px;
+  height: 52px;
+  flex-shrink: 0;
+}
+.banner-input select {
+  color: rgba(19, 19, 24, 0.5);
+  width: 174px;
+  height: 52px;
+  border-radius: 7px;
+  background: #fff;
+  text-align: center;
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  border-style: none;
+}
+.banner-input button {
+  color: #fff;
+  text-align: center;
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  width: 174px;
+  height: 52px;
+  border-radius: 8px;
+  background: #ff5400;
+  border-style: none;
+  cursor: pointer;
+}
+
+/* Popular tours related styles */
+.popular-tour-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popular-tour-col-1 {
+  padding-right: 50px;
+}
+
+.popular-tour-col-1 .section-description {
+  margin-bottom: 20px;
+}
+
+.popular-tour-col-1 ul {
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  padding-left: 40px;
+}
+
+.popular-tour-col-1 ul li {
+  margin-bottom: 10px;
+}
+.popular-tour-col-1 button {
+  color: #fff;
+  text-align: center;
+  font-family: "Mulish";
+  font-size: 16px;
+  font-weight: 700;
+  width: 174px;
+  height: 52px;
+  border-radius: 8px;
+  background: #ff5400;
+  border-style: none;
+  margin-bottom: 30px;
+}
+
+.popular-tour-image {
+  display: flex;
+  justify-content: end;
+}
+.popular-tour-image img {
+  height: 90%;
+}
+
+/* Destination related styes */
+.destination-section {
+  text-align: center;
+  margin-top: 0px;
+}
+
+.destination-section .section-description {
+  padding: 0px 150px;
+}
+.collage-row {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.image-container {
+  position: relative;
+  text-align: center;
+}
+
+.image-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* newsletter related styles */
+
+.newsletter-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.newsletter {
+  width: 40%;
+  height: 100%;
+  padding: 40px;
+  border: 2px solid #ff5400;
+  border-radius: 12px;
+}
+
+.newsletter-section h3 {
+  color: #131318;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: normal;
+}
+.newsletter p {
+  color: #5a5a5d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 15px 0px;
+}
+
+.newsletter-description input {
+  width: 100%;
+  height: 52px;
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+  border-style: none;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.newsletter-description input:focus {
+  outline: none;
+  border: 1px solid #ff5400;
+}
+.btn-primary {
+  width: 100%;
+  height: 52px;
+  border-radius: 8px;
+  background: #ff5400;
+  color: #fff;
+  text-align: center;
+  font-family: "Mulish", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: normal;
+  border-style: none;
+  cursor: pointer;
+}
+
+.newsletter-image {
+  display: flex;
+}
+
+.newsletter-image img {
+  width: 100%;
+  height: 85%;
+}
+/* foter related styles */
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 70px 200px;
+  background: rgba(19, 19, 24, 0.05);
+  color: #5a5a5d;
+}
+
+.footer-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+
+.footer-icon img {
+  width: 40px;
+  margin-right: 15px;
+}
+.footer-description {
+  margin: 15px 0px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.social-links a {
+  margin: 10px;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #5a5a5d;
+  margin: 50px 0px;
 }
