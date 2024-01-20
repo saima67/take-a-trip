@@ -58,6 +58,10 @@ nav {
   color: orangered;
 }
 
+.menu-bar {
+  display: none;
+}
+
 nav > ul {
   display: flex;
   font-size: 18px;
@@ -359,11 +363,40 @@ nav a {
 
 .newsletter-image {
   display: flex;
+  position: relative;
 }
 
 .newsletter-image img {
   width: 100%;
   height: 85%;
+}
+
+.discount-tag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 28%;
+  right: 2%;
+  width: 324px;
+  height: 120px;
+  transform: rotate(-19.628deg);
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: #ff5400;
+  color: #fff;
+}
+
+.discount-tag p {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.discount-tag h3 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 800;
 }
 /* foter related styles */
 footer {
@@ -405,7 +438,7 @@ footer {
   margin: 50px 0px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 600px) {
   /* common styles  */
   header,
   main {
@@ -425,9 +458,15 @@ footer {
     font-size: 20px;
   }
 
-  nav ul {
+  .nav-items {
     display: none;
   }
+
+  .menu-bar {
+    display: block;
+    width: 44px;
+  }
+
   .banner {
     padding: 10px;
     background-size: cover;
@@ -549,6 +588,22 @@ footer {
     width: 100%;
     height: 100%;
   }
+
+  .discount-tag {
+    width: 215px;
+    height: 80px;
+    bottom: 18%;
+  }
+
+  .discount-tag p {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .discount-tag h3 {
+    font-size: 21px;
+  }
+
   /* foter related styles */
   footer {
     width: 100%;
